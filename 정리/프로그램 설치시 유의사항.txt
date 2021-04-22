@@ -1,0 +1,6 @@
+프로그램 설치 시 package.json에서 dependencies 에 기록된다.
+하지만 해당 프로그램에 영향을 미치는 프로그램이 아닌 단순히 프로그래머가 필요로 해서 다운로드 받는 거라면 -D를 붙혀줘야 한다.
+ex) npm install nodemon -D(서버를 끄고 키고 할 필요없다.)
+
+설치 완료시 
+devDependencies라는 부분이 따로 형성된다.

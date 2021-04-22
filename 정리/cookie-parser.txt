@@ -1,0 +1,8 @@
+요청된 쿠키를 쉽게 추출할 수 있도록 도와주는 미들웨어 입니다.
+npm install cookie-parser
+npm install body-parser
+
+단 요즘 body-parser는 express안에 들어가 있기때문에 
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+로 수정

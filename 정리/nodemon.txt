@@ -1,0 +1,11 @@
+내용이 바뀔때 마다 서버를 끄고 킬 필요없게 해준다.
+저장할 시 서버를 재시작 해준다.
+설치 : npm install nodemon -D
+
+
+package.json에서 
+
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js"
+  }
+로 수정 앞에 nodemon을 붙혔다.

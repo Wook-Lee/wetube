@@ -1,0 +1,20 @@
+최신의 Javascript를 예전의 Javascript로 바꿔준다.
+
+1. npm install @babel/node
+
+2. npm install @babel/preset-env
+
+3. npm install @babel/core
+
+package.json에
+  "scripts": {
+    "start": "babel-node index.js"
+  }
+
+라고 수정
+
+.babelrc 생성 후 
+{
+    "presets": ["@babel/preset-env"]
+ }
+입력, 저장

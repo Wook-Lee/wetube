@@ -1,0 +1,4 @@
+npm install morgan
+
+middleware로 사용시 기록을 남겨준다.
+가령 어디에 접속했는지(tiny), 어떤 웹으로 접속했는지(combined 시간,날짜포함), common: 시간,날짜, dev 는 모르겠다

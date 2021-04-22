@@ -1,0 +1,5 @@
+const PORT = 4000
+const handleListening = () => console.log(`Listening on: http://localhost:${PORT}`);
+app.listen(PORT, handleListening); 
+
+위의 코드를 넣은 뒤 동작시키면 localhost:4000번에 서버가 생성된다.

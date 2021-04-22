@@ -1,0 +1,9 @@
+npm install morgan
+
+middleware로 사용시 기록을 남겨준다.
+가령 어디에 접속했는지(tiny), 어떤 웹으로 접속했는지(combined 시간,날짜포함), common: 시간,날짜, dev 는 모르겠다
+
+Morgan - 로그를 남겨줌
+helmet - 기초보안담당함
+cookieParser - 쿠키를 다룰 수 있음
+bodyParser - form데이터를 서버로 받아와서 활용가능함.

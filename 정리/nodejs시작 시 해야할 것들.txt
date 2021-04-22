@@ -1,0 +1,7 @@
+1. npm init을 실행하여 package.json을 생성해준다
+2. npm install express을 실행 (단 package.json가 있는 곳에서 실행하기)
+-> 엄청난 수의 모듈과 package-lock.json이 생성된다.
+
+package.json의 장점
+프로젝트를 할때 이 파일만 있으면 어느 파일을 설치할지 알 수 있다.
+npm install을 입력하면 package.json에 기록되어있는 것들(모듈들)을 다운로드 받을 수 있다.

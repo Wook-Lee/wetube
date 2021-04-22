@@ -1,3 +1,6 @@
+// middleware은 시작과 끝 사이에 위치한다.
+// next라는 것을 가진다.
+// 마지막에 next()를 써주지 않으면 끝단에 도착하지 않는다.
 npm install morgan
 
 middleware로 사용시 기록을 남겨준다.

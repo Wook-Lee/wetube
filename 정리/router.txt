@@ -1,5 +1,5 @@
 / -> home
-
+app.use() 사용
 만약 /user or /user/edit or /user/password 등
 /user를 공통으로 가진 주소가 있다면 어떻게 할것인가?
 일일이 모든것을 쓰는 방법도 있지만 그것보다 route를 사용하는 것이 현명하다.

@@ -1,0 +1,32 @@
+왜 /users/users
+왜 /videos/videos
+로 해야 접속이 되는가?
+localhost:포트번호/users -> app.js에 있는 app.use(routes.users, userRouter);의 userRouter가 실행
+그럼 userRouter.js 에서 
+userRouter.get(routes.home, users);
+userRouter.get(routes.editProfile, editProfile);
+userRouter.get(routes.changePassword, changePassword);
+userRouter.get(routes.userDetail, userDetail);
+가 존재하는데
+
+userRouter.get(routes.home, users); -> localhost:포트번호/users/ 일때 실행
+그에 반면 
+userRouter.get(routes.users, users); ->  localhost:포트번호/users/users 일때 실행
+즉 localhost:포트번호/users로 이미 실행이 되었는데 다시 그 뒤에 /users를 붙혀줘야 /users페이지로 이동하게 된다.
+
+그럼 왜 ocalhost:포트번호/users/users 일때 실행이냐!
+
+routes.js에서 
+const USERS = "/users";
+cosnt routes = {
+	...
+	users: Users;
+	...
+}
+즉 routes.users = /users를 의미
+이미 localhost:포트번호/users 를 입력했는데 
+userRouter.get(routes.users, users);
+이렇게 입력했기에
+localhost:포트번호/users/users.가 한번 더 붙어야만 제대로 작동한다.
+만약에 localhost:포트번호/users/로만 동작하게 하고 싶다면
+userRouter.get(routes.users, users); -> userRouter.get(routes.home, users);

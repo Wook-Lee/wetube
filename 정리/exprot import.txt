@@ -1,0 +1,31 @@
+import 가져오기
+export 내보내기
+
+export
+1. 전체를 내보내기
+export default app(app은 현재 코딩하고 있는 부분을 가져온것 다른것을 내보낸다면 그 이름을 쓰면 된다.);
+또한 맨 마지막에 작성해준다.
+2. 부분 내보내기
+export const userRouter = express.Router();
+해당 부분에 적기만 하면 된다.
+
+내보내기를 두가지로 나눈 이유는 내보내는 방식도 다르지만 가져오는 방식도 다르다.
+
+-----------------
+import {userRouter} from "./router"; 
+2. 부분 내보내기 한 것을 가져온 것이다.
+무엇을 가져오는지 명확히 명시 해줘야한다.
+
+그에비해
+import app from "./app";
+전체를 내보낸 것은 {}이런 괄호를 쓰지 않아도 된다.
+
+여기서 주의할 점!
+
+제공되는 라이브러리를 가져올때와 내가 만든것을 가져올때의 차이!
+바로 from 뒤에 ""안의 내용이다.
+import express from "express";
+import app from "./app";
+
+./은 내가 만든것들을 가져올때 쓰는 것이다.
+./ 경로를 의미

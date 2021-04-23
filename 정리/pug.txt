@@ -1,0 +1,13 @@
+npm install pug
+app.set("view engine", "pug")
+
+html대신 .pug가 대신한다.
+views폴더에 저장-> 이유는 app.set("view engine", "pug")의 경로가 views폴더에서 내용을 찾기 때문이다.
+res.render로 해야 views폴더에서 원하는 pug파일을 찾는다
+
+pug의 장점
+화면에 비슷한 부분이 존재하는데
+기존에는 모든 코드를 복사 붙혀넣기를 해야만 했다면
+pug는 그럴필요가 없다.
+
+문법은 html과 같다
